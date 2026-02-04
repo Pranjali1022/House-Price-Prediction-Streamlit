@@ -8,7 +8,7 @@ st.set_page_config(page_title="House Price Prediction", layout="centered")
 st.title("House Price Prediction")
 st.write("Enter property details to estimate the house price.")
 
-location = st.selectbox("Location", ["CityB", "CityC", "CityD"])
+location = st.selectbox("Location", ["CityA", "CityB", "CityC", "CityD"])
 size = st.number_input("Size (sq ft)", min_value=100, max_value=10000, value=2000)
 bedrooms = st.number_input("Bedrooms", min_value=1, max_value=10, value=2)
 bathrooms = st.number_input("Bathrooms", min_value=1, max_value=10, value=1)
