@@ -10,7 +10,7 @@ Original file is located at
 import streamlit as st
 import requests
 
-API_URL = "https://house-price-prediction-api-28mv.onrender.com/predict"
+API_URL = "https://house-price-prediction-api-ky9x.onrender.com//predict"
 
 st.set_page_config(page_title="House Price Prediction", layout="centered")
 
