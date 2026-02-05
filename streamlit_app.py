@@ -53,8 +53,12 @@ if submit_btn:
                     price = result["predicted_price"]
                     st.success("Prediction successful")
                     st.metric(label="Estimated House Price", value=f"₹ {price:,.2f}")
+                elif "error" in result:
+                    st.error("Prediction failed on server.")
+                    st.write("Details:", result.get("details", "No details provided"))
                 else:
                     st.error("Unexpected API response.")
+                    st.write(result)
             else:
                 st.error("Failed to get prediction from API.")
         except requests.exceptions.ReadTimeout:
