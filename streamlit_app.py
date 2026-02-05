@@ -72,7 +72,7 @@ with st.form("prediction_form"):
 
         condition = st.selectbox(
             "Condition",
-            ["Fair", "Good", "New"]
+            ["Poor", "Fair", "Good", "New"]
         )
 
         property_type = st.selectbox(
